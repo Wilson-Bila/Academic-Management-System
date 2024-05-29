@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28/05/2024 23:20:30 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Realiza" table="realiza" catalog="gestao_academica" optimistic-lock="version">
+        <id name="idEstudante" type="int">
+            <column name="id_estudante" />
+            <generator class="foreign">
+                <param name="property">estudante</param>
+            </generator>
+        </id>
+        <many-to-one name="avaliacao" class="model.Avaliacao" fetch="select">
+            <column name="avaliacao" not-null="true" />
+        </many-to-one>
+        <many-to-one name="disciplina" class="model.Disciplina" fetch="select">
+            <column name="disciplina" not-null="true" />
+        </many-to-one>
+        <one-to-one name="estudante" class="model.Estudante" constrained="true"></one-to-one>
+        <property name="nota" type="big_decimal">
+            <column name="nota" precision="5" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
