@@ -13,13 +13,13 @@
 ![Imagem menu](menu.png)
 
 <div>
-<h1>The Course:</h1> 
+<h1>The Course CRUD:</h1> 
 </div>
 
 ![Imagem curso](curso.png)
 
 <div>
-<h1>The registered objects:</h1> 
+<h1>The created objects:</h1> 
 </div>
 
 ![Imagem curso](curso-db.png)
