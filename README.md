@@ -1,4 +1,4 @@
-<h1>This System is about management academic. We here can register the 6 objects using jsp, servlets, Hibernate and MySQL</h1>
+<h1>This System is about management academic. We here can register the 6 objects using Java, jsp, servlets, Javascript, Hibernate and MySQL</h1>
 
 <div>
 <h1>The initial page:</h1> 
